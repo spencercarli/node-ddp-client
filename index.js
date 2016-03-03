@@ -73,6 +73,7 @@ class DDPClient extends EventEmitter{
       }
 
       self.emit("socket-error", error);
+      self._recoverNetworkError();
     };
 
     self.socket.onclose = function(event) {
@@ -97,7 +98,7 @@ class DDPClient extends EventEmitter{
 
   _recoverNetworkError() {
     var self = this;
-    if (self.autoReconnect && ! self._connectionFailed && ! self._isClosing) {
+    if (self.autoReconnect && ! self._isClosing) {
       self._clearReconnectTimeout();
       self.reconnectTimeout = setTimeout(function() { self.connect(); }, self.autoReconnectTimer);
       self._isReconnecting = true;
