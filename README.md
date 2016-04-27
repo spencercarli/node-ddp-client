@@ -1,3 +1,5 @@
+Based on the great work by done [here](https://github.com/hharnisc/node-ddp-client). A majority of the code is from that repo.
+
 Node DDP Client
 ===============
 
