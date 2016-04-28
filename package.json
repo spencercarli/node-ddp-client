@@ -1,6 +1,6 @@
 {
   "name": "node-ddp-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DDP Client for browsers and native JS runtimes.",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/spencercarli/node-ddp-client/issues"
   },
-  "homepage": "https://github.com/spencercarli/node-ddp-client#readme"
+  "homepage": "https://github.com/spencercarli/node-ddp-client#readme",
+  "dependencies": {
+    "ejson": "^2.1.2",
+    "events": "^1.1.0",
+    "underscore": "^1.8.3"
+  }
 }
