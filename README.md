@@ -11,7 +11,7 @@ Installation
 ============
 
 ```
-$ npm install ddp-client
+$ npm install node-ddp-client
 ```
 
 Authentication
